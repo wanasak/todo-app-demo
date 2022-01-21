@@ -1,0 +1,22 @@
+GET http://localhost:7000/todos
+
+###
+
+POST http://localhost:7000/todos
+Content-Type: application/json
+
+{
+    "title": "Buy milk",
+    "completed": false
+}
+
+###
+PATCH http://localhost:7000/todos/6HBrOmMiCaTTSn5qtKsoi
+Content-Type: application/json
+
+{
+    "completed": true
+}
+
+###
+DELETE http://localhost:7000/todos/CcVFfluiAudjk4iUMZmyH
